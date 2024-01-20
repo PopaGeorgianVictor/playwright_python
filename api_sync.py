@@ -8,7 +8,18 @@ your application and ensures that the data is always up-to-date by providing del
 with sync_playwright() as playwright:
     # launch browser and stay open for 2 sec
     browser = playwright.chromium.launch(headless=False, slow_mo = 2000)
+
     # create a new page
     page = browser.new_page()
     page.goto('https://playwright.dev/python/')
-    # browser.close()
+
+    # locate a link element with Docs text
+    docs_button = page.get_by_role('link' , name ='Docs')
+    docs_button.click()
+
+    # ger the url
+    print('Docs:' , page.url)
+
+
+
+
