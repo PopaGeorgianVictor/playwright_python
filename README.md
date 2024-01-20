@@ -6,7 +6,7 @@
 
 [https://playwright.dev/python/docs/api/class-playwright](https://playwright.dev/python/docs/api/class-playwright)
 
-## Example
+
 
 ```py
 from playwright.sync_api import sync_playwright
