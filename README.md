@@ -55,7 +55,7 @@ pytest --browser-channel (specified browser)
 ```
 ## Trace test
 ```py
-pytest --tracing on
+pytest --tracing on ; to view file run : playwright show-trace (directory/name  of the file)
 ```
 
  
