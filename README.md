@@ -43,7 +43,11 @@ asyncio.run(main())
 
 ## Run in multiple browser in the same time use :
 ```py
-   pytest --browser chromium --browser firefox
+pytest --browser chromium --browser firefox
+```
+## Run in headed mode
+```py
+pytest --headed
 ```
 
 
