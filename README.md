@@ -39,9 +39,23 @@ asyncio.run(main())
 
 
 
-# Interacting with Elements
+# Run test with Pytest
 
- <img src="">
-
+## Run in multiple browser in the same time use :
+```py
+pytest --browser chromium --browser firefox
+```
+## Run in headed mode
+```py
+pytest --headed
+```
+## Run in real browser pytest --browser-channel
+```py
+pytest --browser-channel (specified browser)
+```
+## Trace test
+```py
+pytest --tracing on ; to view file run : playwright show-trace (directory/name  of the file)
+```
 
  
