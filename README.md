@@ -42,7 +42,9 @@ asyncio.run(main())
 # Run test with Pytest
 
 ## Run in multiple browser in the same time use :
-  ### pytest --browser chromium --browser firefox
+```py
+   pytest --browser chromium --browser firefox
+```
 
 
  
