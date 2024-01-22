@@ -49,6 +49,13 @@ pytest --browser chromium --browser firefox
 ```py
 pytest --headed
 ```
-
+## Run in real browser pytest --browser-channel
+```py
+pytest --browser-channel (specified browser)
+```
+## Trace test
+```py
+pytest --tracing on
+```
 
  
