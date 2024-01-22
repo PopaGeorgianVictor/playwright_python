@@ -39,9 +39,10 @@ asyncio.run(main())
 
 
 
-# Interacting with Elements
+# Run test with Pytest
 
- <img src="">
+## Run in multiple browser in the same time use :
+  ### pytest --browser chromium --browser firefox
 
 
  
