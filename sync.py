@@ -5,9 +5,9 @@ your application and ensures that the data is always up-to-date by providing del
 
 # playwright = sync_playwright().start()
 
-with sync_playwright() as playwright:
+with sync_playwright() as p:
     # launch browser and stay open for 2 sec
-    browser = playwright.chromium.launch(headless=False, slow_mo = 2000)
+    browser = p.chromium.launch(headless=False, slow_mo = 2000)
 
     # create a new page
     page = browser.new_page()
@@ -16,6 +16,7 @@ with sync_playwright() as playwright:
     # locate a link element with Docs text
     docs_button = page.get_by_role('link' , name ='Docs')
     docs_button.click()
+    page.screenshot(path="demo.png")
 
     # ger the url
     print('Docs:' , page.url)
