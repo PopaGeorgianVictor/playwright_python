@@ -85,5 +85,9 @@ pytest --tracing on ; to view file run : playwright show-trace (directory/name  
 playwright codegen (url)
 ```
 
+* also run in emulated device
 
+```py
+playwright codegen --device="name of device , for ex iPhone 13" (url) or set size playwright codegen --viewport-size=800,600
+```
  
