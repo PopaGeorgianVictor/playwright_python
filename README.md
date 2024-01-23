@@ -58,4 +58,15 @@ pytest --browser-channel (specified browser)
 pytest --tracing on ; to view file run : playwright show-trace (directory/name  of the file)
 ```
 
+## Running Codegen 
+
+*  run the test generator followed by the URL of the website you want to generate tests for
+
+*  the URL is optional and you can always run the command without it and then add the URL directly into the browser window instead.
+
+```py
+playwright codegen (url)
+```
+
+
  
