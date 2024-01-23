@@ -41,6 +41,23 @@ asyncio.run(main())
 
 # Run test with Pytest
 
+## Configuration file
+
+* create a configuration file inside the project (_name_file.ini_)
+
+    <img src="https://i.postimg.cc/ZKjZfYdc/adds.png" height="150">
+
+
+```py
+   [pytest]
+   addopts = --browser chromium --headed --slowmo 1000 (or other option )
+```
+
+* when run project with pytest is no need to write all comands , just run pytest(name_project) in terminal
+
+
+
+
 ## Run in multiple browser in the same time use :
 ```py
 pytest --browser chromium --browser firefox
@@ -68,5 +85,9 @@ pytest --tracing on ; to view file run : playwright show-trace (directory/name  
 playwright codegen (url)
 ```
 
+* also run in emulated device
 
+```py
+playwright codegen --device="name of device , for ex iPhone 13" (url) or set size playwright codegen --viewport-size=800,600
+```
  
